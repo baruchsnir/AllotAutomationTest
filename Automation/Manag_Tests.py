@@ -115,6 +115,7 @@ class Manag_Tests:
         # Second test that copy all files that generate in test 1 and look on the test application screen
         # and collect the data
         # ###
+        result = True
         num = 10
         self.addreportline("3. Test Edit Clean Files")
         self.addlogline(" Start Edit Clean {0} Files in Watch Directory".format(num))
