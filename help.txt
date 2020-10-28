@@ -1,0 +1,36 @@
+Usage: Automation exercise [options]
+
+This is the application you are require to test.
+    The application is watching changes to a specified folder and look for dirty files to delete.
+    The application identifies a dirty file by it's file extension '.dirty'.
+    Application output is to console (STDOUT) and will follow this format 'TIME::!ACTION!::PATH'.
+    Possible actions are [ADDED,CHANGED,DIRTY,REMOVED,CLEAN,ERROR]:
+    •   ADDED   – new file added to the watched folder
+    •   CHANGED – an existing file was changed in the watched folder
+    •   DIRTY   – Application identified a file as dirty
+    •   CLEAN   – Application identified a file as clean
+    •   REMOVED – Application deleted the dirty file
+    •   ERROR   - Application failed to process a file
+    In order to generate test files you can use the -g [number] to create 50% dirty and 50% clean files.
+    Examples:
+    •   Generate files command - <run application> -g 1000 -o '/Baruch/Alot/Automation exercise/test_files'
+    •   Start watching a folder - <run application> -w '/some_path/watched_folder'
+
+Options:
+  -w, --watch <string>       Path to a folder to watch
+  -g, --generate-data <int>  Number of test files to generate, in the path given
+  -o, --output <string>      Path to output folder for generated files
+  -h, --help                 output usage information
+
+
+environment
+----------------
+Pycharm
+Selenium
+Pytest
+Allure-pytest
+
+
+
+
+

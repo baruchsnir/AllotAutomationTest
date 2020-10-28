@@ -1,0 +1,6 @@
+-a
+c:/Baruch/Alot/WorkSpace/Application/index-win.exe 
+-w
+C:/Baruch/Alot/WorkSpace/WatchDirectory
+-l
+C:/Baruch/Alot/WorkSpace/Reporting/Logs
